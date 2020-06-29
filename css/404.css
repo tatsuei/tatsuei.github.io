@@ -11,6 +11,11 @@ body {
   flex-flow: column;  /*this is  what was missing too*/
 }
 
+#welcome-section h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
 .welcome-header {
   text-align: center;
   /*vertical-align: center; useless*/
