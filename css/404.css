@@ -16,7 +16,7 @@ h1 {
     height: 100vh;
 }
 
-.main-text h1 h2 {
+.main-text {
   position: absolute;
   top: 50%;
   left: 50%;
