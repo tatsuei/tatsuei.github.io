@@ -8,7 +8,7 @@ h1 {
     font-size: 60px;
 }
 
-.body-content {
+.main-text {
     position: relative;
     width: 100%;
 
@@ -16,7 +16,7 @@ h1 {
     height: 100vh;
 }
 
-.main-text {
+.main-text h1 {
   position: absolute;
   top: 50%;
   left: 50%;
