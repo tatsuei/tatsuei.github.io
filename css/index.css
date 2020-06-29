@@ -5,7 +5,7 @@ body {
 
 #welcome-section {
   height: 100vh;
-  align-items: top;
+  align-items: center;
   justify-content: center;
   display: flex;       /*this is  what was missing */
   flex-flow: column;  /*this is  what was missing too*/
