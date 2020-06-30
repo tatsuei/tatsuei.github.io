@@ -35,3 +35,7 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
+
+.fa{
+  color: black;
+}
