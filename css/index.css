@@ -5,8 +5,8 @@ body {
 
 @font-face {
     font-family: 'montserratregular';
-    src: url('/montserrat-webfont/-regular-webfont.woff2') format('woff2'),
-         url('/montserrat-webfont/montserrat-regular-webfont.woff') format('woff');
+    src: url('tatsuei.github.io/montserrat-webfont/-regular-webfont.woff2') format('woff2'),
+         url('tatsuei.github.io/montserrat-webfont/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
