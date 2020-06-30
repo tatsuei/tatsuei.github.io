@@ -3,34 +3,25 @@ body {
   margin: 0;
 }
 
-@font-face {
-    font-family: 'montserratregular';
-    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
-         url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 #welcome-section {
   height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-flow: column;
-  font-family: 'montserrat-regular', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #welcome-section h2 {
   font-size: 24px;
   font-weight: normal;
-  font-family: 'montserrat-regular', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #welcome-section h3 {
   font-size: 20px;
   font-weight: normal;
-  font-family: 'montserrat-regular', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .welcome-header {
