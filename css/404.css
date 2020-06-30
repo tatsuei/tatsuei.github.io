@@ -13,7 +13,7 @@ body {
 }
 
 #welcome-section {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -24,13 +24,13 @@ body {
 #welcome-section h2 {
   font-size: 22px;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
 }
 
 #welcome-section h3 {
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
 }
 
 .welcome-header {

@@ -18,19 +18,19 @@ body {
   justify-content: center;
   display: flex;
   flex-flow: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
 }
 
 #welcome-section h2 {
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
 }
 
 #welcome-section h3 {
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'montserrat-regular', sans-serif;
 }
 
 .welcome-header {
