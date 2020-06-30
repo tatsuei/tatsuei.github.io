@@ -16,6 +16,11 @@ body {
   font-weight: normal;
 }
 
+#welcome-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .welcome-header {
   text-align: center;
   /*vertical-align: center; useless*/
