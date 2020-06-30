@@ -25,3 +25,10 @@ body {
   text-align: center;
   /*vertical-align: center; useless*/
 }
+
+.btn {
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
