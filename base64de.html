@@ -8,11 +8,13 @@
 
 <p><strong>Note:</strong> The atob() method is not supported in IE9 and earlier.</p>
 
+<input type="text" id="myText" value="">
+
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-  var str = "Hello World!";
+  var str = document.getElementById("myText").value;
   var enc = window.btoa(str);
   var dec = window.atob(enc);
 
