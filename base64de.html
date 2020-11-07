@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Decode base64!</title>
+  <link rel="stylesheet" href="/styles/hello.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
 <p>Click the button to decode a base-64 encoded string.</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="decodeOnce()">Once</button>
+<button onclick="decodeTwice()">Twice!</button>
 
 <p><strong>Note:</strong> The atob() method is not supported in IE9 and earlier.</p>
 
@@ -13,14 +23,23 @@
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function decodeOnce() {
   var str = document.getElementById("myText").value;
   //var enc = window.btoa(str);
   var dec = window.atob(str);
   //var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
   var res = "The decoded text is: " + dec;
   document.getElementById("demo").innerHTML = res;
+  return dec;
 }
+
+function decodeTwice() {
+  var str = document.getElementById("myText").value;
+  var dec = window.atob(str);
+  var dec2 = window.atob(dec2);
+  var res = "The decoded text is: " + dec2;
+}
+
 </script>
 
 </body>
