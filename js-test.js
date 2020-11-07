@@ -1,6 +1,7 @@
-var str = "Hello World!";
-// Defining a string
-var enc = window.btoa(str);
-// Uses the 'Binary to ASCII' function on the string
-var res = "Encoded String: " + enc;
-// Outputs the base64 string 
+function myFunction() {
+  var str = "Hello World!";
+  var enc = window.btoa(str);
+  var dec = window.atob(enc);
+
+  var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
+}
