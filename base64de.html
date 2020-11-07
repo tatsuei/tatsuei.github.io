@@ -11,19 +11,20 @@
 </head>
 
 <body>
-  <p>
-    Click the button to decode a base-64 encoded string.
-  </p>
-  <button onclick="decodeOnce()">Once</button>
-  <button onclick="decodeTwice()">Twice!</button>
-  <p>
-    <strong>
-      Note:
-    </strong>
-    The atob() method is not supported in IE9 and earlier.
-  </p>
-  <input type="text" id="myText" value="">
-  <p id="decoder"></p>
+  <div id="welcome-section">
+    <p>
+      Click the button to decode a base-64 encoded string.
+    </p>
+    <button onclick="decodeOnce()">Once</button>
+    <button onclick="decodeTwice()">Twice!</button>
+    <p>
+      <strong>
+        Note:
+      </strong>
+      The atob() method is not supported in IE9 and earlier.
+    </p>
+    <input type="text" id="myText" value="">
+    <p id="decoder"></p>
 
 <script>
 function decodeOnce() {
