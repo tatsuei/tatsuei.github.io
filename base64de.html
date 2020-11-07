@@ -36,7 +36,7 @@ function decodeOnce() {
 function decodeTwice() {
   var str = document.getElementById("myText").value;
   var dec = window.atob(str);
-  var dec2 = window.atob(dec2);
+  var dec2 = window.atob(dec);
   var res = "The decoded text is: " + dec2;
   document.getElementById("demo").innerHTML = res;
 }
