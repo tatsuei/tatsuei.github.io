@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -13,7 +12,6 @@
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!-- Begin navbar -->
   <div id="nav-placeholder"></div>
@@ -34,26 +32,22 @@
     <button onclick="decodeTwice()">Twice!</button><br>
     <input type="text" id="myText" value=""><br>
     <p id="decoder"></p>
-
-<script>
-function decodeOnce() {
-  var str = document.getElementById("myText").value;
-  //var enc = window.btoa(str);
-  var dec = window.atob(str);
-  //var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
-  var res = "The decoded text is: " + dec;
-  document.getElementById("decoder").innerHTML = res;
-}
-
-function decodeTwice() {
-  var str = document.getElementById("myText").value;
-  var dec = window.atob(str);
-  var dec2 = window.atob(dec);
-  var res = "The decoded text is: " + dec2;
-  document.getElementById("decoder").innerHTML = res;
-}
-
-</script>
-
+  <script>
+  function decodeOnce() {
+    var str = document.getElementById("myText").value;
+    //var enc = window.btoa(str);
+    var dec = window.atob(str);
+    //var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
+    var res = "The decoded text is: " + dec;
+    document.getElementById("decoder").innerHTML = res;
+  }
+  function decodeTwice() {
+    var str = document.getElementById("myText").value;
+    var dec = window.atob(str);
+    var dec2 = window.atob(dec);
+    var res = "The decoded text is: " + dec2;
+    document.getElementById("decoder").innerHTML = res;
+  }
+  </script>
 </body>
 </html>
