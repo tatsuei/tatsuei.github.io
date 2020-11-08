@@ -3,6 +3,13 @@ body {
   margin:0;
 }
 
+#inner {
+  width: 100vw;
+  max-width: 950px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 #welcome-section {
   font-family: 'Montserrat', sans-serif;
   height: 90vh;
