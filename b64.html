@@ -32,22 +32,25 @@
     <button onclick="decodeTwice()">Twice!</button><br>
     <input type="text" id="myText" value=""><br>
     <p id="decoder"></p>
-  <script>
-  function decodeOnce() {
-    var str = document.getElementById("myText").value;
-    //var enc = window.btoa(str);
-    var dec = window.atob(str);
-    //var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
-    var res = "The decoded text is: " + dec;
-    document.getElementById("decoder").innerHTML = res;
-  }
-  function decodeTwice() {
-    var str = document.getElementById("myText").value;
-    var dec = window.atob(str);
-    var dec2 = window.atob(dec);
-    var res = "The decoded text is: " + dec2;
-    document.getElementById("decoder").innerHTML = res;
-  }
-  </script>
+    <div id="result">
+      <script>
+      function decodeOnce() {
+        var str = document.getElementById("myText").value;
+        //var enc = window.btoa(str);
+        var dec = window.atob(str);
+        //var res = "Encoded String: " + enc + "<br>" + "Decoded String: " + dec;
+        var res = "The decoded text is: " + dec;
+        document.getElementById("decoder").innerHTML = res;
+      }
+      function decodeTwice() {
+        var str = document.getElementById("myText").value;
+        var dec = window.atob(str);
+        var dec2 = window.atob(dec);
+        var res = "The decoded text is: " + dec2;
+        document.getElementById("decoder").innerHTML = res;
+      }
+      </script>
+    </div>
+  </div>
 </body>
 </html>
