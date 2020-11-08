@@ -28,3 +28,7 @@ body {
   text-align: center;
   /*vertical-align: center; useless*/
 }
+
+#result {
+  word-wrap: break-word;
+}
