@@ -32,4 +32,5 @@ body {
 #result {
   word-wrap: break-word;
   word-break: break-all;
+  padding: 10px 10px 10px 10px;
 }
