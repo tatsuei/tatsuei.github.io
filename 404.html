@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>oops. しまった！</title>
+		<link rel="stylesheet" href="/styles/404.css" />
+		<link rel="stylesheet" href="/styles/navbar.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>oops. しまった！</title>
-  <link rel="stylesheet" href="/styles/404.css"/>
-  <link rel="stylesheet" href="/styles/navbar.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-  rel="stylesheet"/>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Begin navbar -->
-  <div id="nav-placeholder"></div>
-  <script>
-  $(function(){
-    $("#nav-placeholder").load("/navbar.html");
-  });
-  </script>
-  <!-- End navbar -->
-  <div id="welcome-section">
-    <header>
-      <h1 class="welcome-header">ʕ´•ᴥ•`ʔ</h1>
-      <h2 class="welcome-header">seems like there's nothing here.</h2>
-      <a href="http://calvinkhong.com" target="_self" rel="noopener noreferrer">
-        <h3 class="welcome-header">take me back!</h3></a>
-    </header>
-  </div>
-</body>
-
+	<body>
+		<!-- Begin navbar -->
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function () {
+				$("#nav-placeholder").load("/navbar.html");
+			});
+		</script>
+		<!-- End navbar -->
+		<div id="welcome-section">
+			<header>
+				<h1 class="welcome-header">ʕ´•ᴥ•`ʔ</h1>
+				<h2 class="welcome-header">seems like there's nothing here.</h2>
+				<a
+					href="http://127.0.0.1:4000"
+					target="_self"
+					rel="noopener noreferrer"
+				>
+					<h3 class="welcome-header">take me back!</h3>
+				</a>
+			</header>
+		</div>
+	</body>
 </html>
