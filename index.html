@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" color-mode="light">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hello! かるです。</title>
-  <link rel="stylesheet" href="/styles/index.css" />
-  <link rel="stylesheet" href="/styles/navbar.css" />
-  <!--<script src="https://use.fontawesome.com/1761ceaf37.js"></script>-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css" media="all" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Begin navbar -->
-  <div id="nav-placeholder"></div>
-  <script>
-    $(function () {
-      $("#nav-placeholder").load("pages/navbar.html");
-    });
-  </script>
-  <!-- End navbar -->
-  <div id="welcome-section">
-    <header>
-      <h1 class="welcome-header">Hi!</h1>
-      <h2 class="welcome-header">
-        I'm Cal and I experiment with music and data.
-      </h2>
-      <h3 class="welcome-header">
-        Check out my Github repo below for bash scripts!
-      </h3>
-      <h4 class="welcome-header">
-        <i>Kuala Lumpur, Malaysia.</i>
-      </h4>
-    </header>
-    <!--<hr>-->
-    <!--<hr> tag was causing the FontAwesome icons to be "masked"
-    on mobile browser view, specifically Samsung Internet 12.0.1.47-->
-    <div class="socials-center">
-      <div class="socials">
-        <button class="btn">
-          <a href="https://github.com/tatsuei" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
-        </button>
-        <button class="btn">
-          <a href="mailto:cal@calvinkhong.com" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-        </button>
-        <!-- <button class="btn">
-          <a href="https://www.youtube.com/channel/UCsvGOj-a4rgeeezyjWvymsQ" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        </button> -->
-        <button class="btn">
-          <a href="https://calvinkhong.com/pages/b64.html" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-calculator" aria-hidden="true"></i></a>
-      </div>
-    </div>
-    <footer>
-      <p>
-        cooked up by Cal.
-      </p>
-    </footer>
-</body>
-
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>hello! かるです。</title>
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/styles/navbar.css" />
+        <!--<script src="https://use.fontawesome.com/1761ceaf37.js"></script>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Begin navbar -->
+        <div id="nav-placeholder">
+            <script>
+                $(function () {
+                $("#nav-placeholder").load("pages/navbar.html");
+                });
+            </script>  
+        </div>
+        <!-- End navbar -->
+        <div id="welcome-section">
+            <header>
+            <h1 class="welcome-header">Hi!</h1>
+            <h2 class="welcome-header">
+            I'm Cal and I experiment with music and data.
+            </h2>
+            <h3 class="welcome-header">
+            Check out my Github repo below for bash scripts!
+            </h3>
+            <h4 class="welcome-header">
+            <i>Kuala Lumpur, Malaysia.</i>
+            </h4>
+            </header>
+            <!--<hr>-->
+            <!--<hr> tag was causing the FontAwesome icons to be "masked"
+            on mobile browser view, specifically Samsung Internet 12.0.1.47-->
+            <div class="socials-center">
+                <div class="socials">
+                    <button class="btn">
+                    <a href="https://github.com/tatsuei" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </button>
+                    <button class="btn">
+                    <a href="mailto:cal@calvinkhong.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </button>
+                    <!-- <button class="btn">
+                    <a href="https://www.youtube.com/channel/UCsvGOj-a4rgeeezyjWvymsQ" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </button> -->
+                    <button class="btn">
+                    <a href="https://localhost:4000/pages/b64.html" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    </button>
+                </div>
+            </div>
+            <footer>
+                <p>
+                cooked up by Cal.
+                </p>
+            </footer>
+        </div> 
+    </body>
 </html>
