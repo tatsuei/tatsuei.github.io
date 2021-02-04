@@ -1,69 +1,244 @@
+<!-- Much thanks to Ryan Feigenbaum (@royalfig) for his skeleton code on GitHub! 
+    https://github.com/royalfig -->
+
 <!DOCTYPE html>
 <html lang="en" color-mode="light">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>hello! かるです。</title>
-        <link rel="stylesheet" href="/styles/index.css" />
-        <link rel="stylesheet" href="/styles/navbar.css" />
-        <!--<script src="https://use.fontawesome.com/1761ceaf37.js"></script>-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Begin navbar -->
-        <div id="nav-placeholder">
-            <script>
-                $(function () {
-                $("#nav-placeholder").load("pages/navbar.html");
-                });
-            </script>  
-        </div>
-        <!-- End navbar -->
-        <div id="welcome-section">
-            <header>
-            <h1 class="welcome-header">Hi!</h1>
-            <h2 class="welcome-header">
-            I'm Cal and I experiment with music and data.
-            </h2>
-            <h3 class="welcome-header">
-            Check out my Github repo below for bash scripts!
-            </h3>
-            <h4 class="welcome-header">
-            <i>Kuala Lumpur, Malaysia.</i>
-            </h4>
-            </header>
-            <!--<hr>-->
-            <!--<hr> tag was causing the FontAwesome icons to be "masked"
-            on mobile browser view, specifically Samsung Internet 12.0.1.47-->
-            <div class="socials-center">
-                <div class="socials">
-                    <button class="btn">
-                    <a href="https://github.com/tatsuei" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-github" aria-hidden="true"></i></a>
-                    </button>
-                    <button class="btn">
-                    <a href="mailto:cal@calvinkhong.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    </button>
-                    <!-- <button class="btn">
-                    <a href="https://www.youtube.com/channel/UCsvGOj-a4rgeeezyjWvymsQ" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                    </button> -->
-                    <button class="btn">
-                    <a href="https://localhost:4000/pages/b64.html" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-calculator" aria-hidden="true"></i></a>
-                    </button>
-                </div>
-            </div>
-            <footer>
-                <p>
-                cooked up by Cal.
-                </p>
-            </footer>
-        </div> 
-    </body>
+	<head>
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			if (
+				// If the color-mode is set to "dark" or if the system default is "dark"
+				// then follow suit.
+				localStorage.getItem("color-mode") === "dark" ||
+				(window.matchMedia("(prefers-color-scheme: dark)").matches &&
+					!localStorage.getItem("color-mode"))
+			) {
+				document.documentElement.setAttribute("color-mode", "dark");
+			}
+		</script>
+		<title>hello ＼ʕ •ᴥ•ʔ／</title>
+	</head>
+	<body>
+		<!-- Sun and Moon icons in .svg format -->
+		<svg style="display: none">
+			<symbol viewBox="0 0 24 24" id="moon">
+				<path
+					d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+				></path>
+			</symbol>
+			<symbol viewBox="0 0 24 24" id="sun">
+				<circle cx="12" cy="12" r="5"></circle>
+				<line x1="12" y1="1" x2="12" y2="3"></line>
+				<line x1="12" y1="21" x2="12" y2="23"></line>
+				<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+				<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+				<line x1="1" y1="12" x2="3" y2="12"></line>
+				<line x1="21" y1="12" x2="23" y2="12"></line>
+				<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+				<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+			</symbol>
+		</svg>
+		<main class="color-mode">
+			<section class="color-mode__section">
+				<header class="color-mode__header">
+					<!-- Light mode button -->
+					<button
+						class="color-mode__btn light--hidden"
+						aria-label="Toggle light mode"
+					>
+						light
+						<svg aria-hidden="true">
+							<title>Light Mode</title>
+							<use href="#sun"></use>
+						</svg>
+					</button>
+					<!-- Dark mode button -->
+					<button
+						class="color-mode__btn dark--hidden"
+						aria-label="Toggle dark mode"
+					>
+						dark
+						<svg aria-hidden="true">
+							<title>Dark Mode</title>
+							<use href="#moon"></use>
+						</svg>
+					</button>
+				</header>
+				<!-- Light Mode HTML -->
+				<div class="color-mode__container dark--hidden">
+					<!-- <h1 class="color-mode__subheader">L I G H T</h1> -->
+					<div class="color-mode__link-container">
+						<a
+							href="http://calvinkhong.com/"
+							target=""
+							class="color-mode__link"
+							>⚬ intro ⚬</a
+						>
+					</div>
+					<h2 class="color-mode__subheader">Prelude</h2>
+					<p>
+						He was on his way to class. Thinking of the many paths
+						to walk down, he finally decided: to take CE and never
+						look back. Little did he know what fate had planned for
+						him.
+					</p>
+					<p>
+						Days, weeks, months. Time flew by and he never gave in
+						to his doubts, much less his worries about the near
+						future. In the back of his mind there was a voice
+						speaking to him, urging him to reconsider while there
+						was time.
+					</p>
+					<p>
+						It finally struck him, and without a moment's
+						hesitation, he rushed to the reception desk of the
+						staffroom and requested a short meeting with the older
+						man, his mentor and confidant. As the school bell rang,
+						he found himself already aboard the train which would
+						bring him on a journey. What's he doing today? Well. Why
+						not take a look for yourself? 👇
+					</p>
+					<!-- <p>
+                            I lay awake at 3am in the morning, thinking. April,
+                            2015. We first met during orientation. You were
+                            annoying, to say the least. Trying your best to fit in
+                            with our classmates, you failed tremendously. I was
+                            among your “victims”, caught up in your stories and
+                            constant yammering. Yet, I enjoyed our little talks from
+                            time to time, when everyone else was trying to ignore
+                            you. We talked about you behind your back, complaints
+                            all over the place. We came up with a nickname for you,
+                            Elsa. Not that you would ever know. You gave me a lift
+                            to the station whenever I asked you for one, but you
+                            never asked for something in return. I could only give
+                            you my time, since it was the only thing I had. <break>
+                            Fast forward a few months, and I find myself surrounded by
+                            lots of new people. Acquaintances, mostly. You’ve made
+                            new friends, like finally. We were distancing ourselves,
+                            constantly changing. I miss talking to you, and I wonder
+                            when was the last time I asked for a lift. One day, I
+                            realise that my friends didn’t save a seat for me in the
+                            lecture theatre. I find myself sitting down next to you,
+                            and I notice you for the first time. I didn’t know I
+                            would find myself admiring you, then and there. <break>
+                            March, 2016. Our foundation is coming to an end, and I’m
+                            thinking of asking you out. On the other hand, I enjoy
+                            your company, yet I feel smothered by it. It is my fault
+                            that I talk to other females too often, yet I want you
+                            to feel secure. We talk about our futures once again,
+                            and I use a language course as my wingman. One day, in a
+                            revision class, you ask me to help you write in to ask
+                            about the details of the course. You gave me your phone,
+                            and asked for mine. I blushed, obviously. That small
+                            gesture was enough to tell me that you placed your trust
+                            in me. Couple of weeks later, and I find myself sitting
+                            beside you on the train, going to Goethe. My friends
+                            there ask me if you’re my sister, but I brush them off.
+                            I introduce you as my friend, not knowing the
+                            consequences of my actions. <break>
+                            May, 2016. You call me one day out of the blue, asking 
+                            me where I am. I can hear that you’re probably very angry 
+                            as I’m not at the language class like I promised. I found 
+                            a job, and I loved it. I start wondering if we would 
+                            converse in German when we see each other. The thought of 
+                            that makes me smile. The sound of disappointment is in 
+                            your voice, and I want to make it up to you. <break> 
+                            September, 2016. I see you for the first time in months, 
+                            and you look lovely. I make a mistake, talking to someone 
+                            I should not be talking to, avoiding you for the most of 
+                            it. I am distancing myself from you once again, being the 
+                            coward that I am. February, 2017. I want to ask you out 
+                            again, after knowing the truth. You politely push me aside,
+                            but I am very stubborn. Push then comes to shove. Before I
+                            know it, our relationship has soured. April, 2017. It is
+                            nearing the end, but I will still go for our final
+                            papers in May, just to see you one last time. I want to
+                            tell you how much I appreciate your support, thank you
+                            for all that you’ve done for me, and for putting your
+                            faith in someone broken like me. <break> 
+                            Gute Nacht.
+                        </p> -->
+					<div class="color-mode__link-container">
+						<a
+							href="https://calvinkhong.com"
+							target="_blank"
+							class="color-mode__link"
+							>Homepage</a
+						>
+						<a
+							href="https://github.com/tatsuei"
+							target="_blank"
+							class="color-mode__link"
+							>GitHub</a
+						>
+						<a
+							href="https://www.hackerrank.com/drxxghn"
+							target="_blank"
+							class="color-mode__link"
+							>HackerRank</a
+						>
+					</div>
+				</div>
+				<!-- Dark Mode HTML -->
+				<div class="color-mode__container light--hidden">
+					<!-- <h1 class="color-mode__subheader">D A R K</h1> -->
+					<div class="color-mode__link-container">
+						<a
+							href="http://calvinkhong.com/"
+							target="_blank"
+							class="color-mode__link"
+							>⚬ intro ⚬</a
+						>
+					</div>
+					<h2 class="color-mode__subheader">Prelude</h2>
+					<p>
+						He was on his way to class. Thinking of the many paths
+						to walk down, he finally decided: to take CE and never
+						look back. Little did he know what fate had planned for
+						him.
+					</p>
+					<p>
+						Days, weeks, months. Time flew by and he never gave in
+						to his doubts, much less his worries about the near
+						future. In the back of his mind there was a voice
+						speaking to him, urging him to reconsider while there
+						was time.
+					</p>
+					<p>
+						It finally struck him, and without a moment's
+						hesitation, he rushed to the reception desk of the
+						staffroom and requested a short meeting with the older
+						man, his mentor and confidant. As the school bell rang,
+						he found himself already aboard the train which would
+						bring him on a journey. What's he doing today? Well. Why
+						not take a look for yourself? 👇
+					</p>
+					<div class="color-mode__link-container">
+						<a
+							href="https://calvinkhong.com"
+							target="_blank"
+							class="color-mode__link"
+							>Homepage</a
+						>
+						<a
+							href="https://github.com/tatsuei"
+							target="_blank"
+							class="color-mode__link"
+							>GitHub</a
+						>
+						<a
+							href="https://www.hackerrank.com/drxxghn"
+							target="_blank"
+							class="color-mode__link"
+							>HackerRank</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/main.js"></script>
+	</body>
 </html>
