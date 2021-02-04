@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>oops. しまった！</title>
-		<link rel="stylesheet" href="/styles/404.css" />
-		<link rel="stylesheet" href="/styles/navbar.css" />
+		<link rel="stylesheet" href="styles/404.css" />
+		<!-- <link rel="stylesheet" href="styles/navbar.css" /> -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
 			rel="stylesheet"
@@ -20,23 +20,24 @@
 	<body>
 		<!-- Begin navbar -->
 		<div id="nav-placeholder"></div>
-		<script>
+		<!-- <script>
 			$(function () {
 				$("#nav-placeholder").load("/navbar.html");
 			});
-		</script>
+		</script> -->
 		<!-- End navbar -->
 		<div id="welcome-section">
 			<header>
 				<h1 class="welcome-header">ʕ´•ᴥ•`ʔ</h1>
 				<h2 class="welcome-header">seems like there's nothing here.</h2>
-				<a
-					href="http://127.0.0.1:4000"
-					target="_self"
-					rel="noopener noreferrer"
-				>
-					<h3 class="welcome-header">take me back!</h3>
-				</a>
+				<div class="color-mode__link-container">
+					<a
+						href="http://127.0.0.1:4000/"
+						target=""
+						class="color-mode__link"
+						>take me back!</a
+					>
+				</div>
 			</header>
 		</div>
 	</body>
